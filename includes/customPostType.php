@@ -1,25 +1,25 @@
 <?php
 
 
-function domi_teammember_cpt() {
-    register_post_type('domi_teammember_cpt',
+function domi_location_cpt() {
+    register_post_type('domi_location_cpt',
         array(
             'labels'      => array(
-                'name'               => _x('Teammember', 'General name', 'wptheme.smartfarming'),
-                'singular_name'      => _x('Teammember', 'Singular name', 'wptheme.smartfarming'),
-                'menu_name'          => _x('Teammember', 'Menu name', 'wptheme.smartfarming'),
+                'name'               => _x('Standort', 'General name', 'wptheme.smartfarming'),
+                'singular_name'      => _x('Standort', 'Singular name', 'wptheme.smartfarming'),
+                'menu_name'          => _x('Standort', 'Menu name', 'wptheme.smartfarming'),
                 'parent_item_colon'  => _x('Übergeordnetes Team', 'Parent item with colon', 'wptheme.smartfarming'),
-                'all_items'          => _x('Alle teammember anzeigen', 'All items', 'wptheme.smartfarming'),
-                'view_item'          => _x('Teammember anzeigen', 'View item', 'wptheme.smartfarming'),
-                'add_new_item'       => _x('Teammember hinzufügen', 'Add new item', 'wptheme.smartfarming'),
-                'add_new'            => _x('Teammember hinzufügen', 'Add new', 'wptheme.smartfarming'),
-                'edit_item'          => _x('Teammember bearbeiten', 'Edit item', 'wptheme.smartfarming'),
-                'update_item'        => _x('Teammember aktualisieren', 'Update item', 'wptheme.smartfarming'),
-                'search_items'       => _x('Teammember suchen', 'Search items', 'wptheme.smartfarming'),
-                'not_found'          => _x('Keine Teammember gefunden.', 'Not found', 'wptheme.smartfarming'),
-                'not_found_in_trash' => _x('Keine Teammember im Papierkorb gefunden.', 'Not found in trash', 'wptheme.smartfarming'),
+                'all_items'          => _x('Alle Standort anzeigen', 'All items', 'wptheme.smartfarming'),
+                'view_item'          => _x('Standort anzeigen', 'View item', 'wptheme.smartfarming'),
+                'add_new_item'       => _x('Standort hinzufügen', 'Add new item', 'wptheme.smartfarming'),
+                'add_new'            => _x('Standort hinzufügen', 'Add new', 'wptheme.smartfarming'),
+                'edit_item'          => _x('Standort bearbeiten', 'Edit item', 'wptheme.smartfarming'),
+                'update_item'        => _x('Standort aktualisieren', 'Update item', 'wptheme.smartfarming'),
+                'search_items'       => _x('Standort suchen', 'Search items', 'wptheme.smartfarming'),
+                'not_found'          => _x('Keine Standort gefunden.', 'Not found', 'wptheme.smartfarming'),
+                'not_found_in_trash' => _x('Keine Standort im Papierkorb gefunden.', 'Not found in trash', 'wptheme.smartfarming'),
             ),
-            'description'         => _x('Teammember Informationen', 'Description', 'wptheme.fgchilis'),
+            'description'         => _x('Standort Informationen', 'Description', 'wptheme.fgchilis'),
             'supports'            => ['title', 'thumbnail', 'editor'],
             'hierarchical'        => false,
             'public'              => true,
@@ -34,9 +34,9 @@ function domi_teammember_cpt() {
             'capability_type'     => 'post',
             'map_meta_cap'        => true,
             'rewrite'             => false,
-            'menu_icon'           => 'dashicons-groups',
+            'menu_icon'           => 'dashicons-location',
         )
     );
 }
-add_action('init', 'domi_teammember_cpt');
+add_action('init', 'domi_location_cpt');
 ?>
