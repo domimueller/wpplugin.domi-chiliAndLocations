@@ -19,7 +19,7 @@ $plugin_url = WP_PLUGIN_DIR . '/' . basename(dirname(__FILE__));
 
 /* include Scripts*/
 function domi_chiliLocation_customcss() {
-    wp_enqueue_style( 'teamcss',  plugin_dir_url( __FILE__ ) . '/css/chiliLocation.css' );                      
+    wp_enqueue_style( 'teamcss',  plugin_dir_url( __FILE__ ) . '/css/custom.css' );                      
 }
 add_action( 'wp_enqueue_scripts', 'domi_chiliLocation_customcss');
 
