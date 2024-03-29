@@ -20,7 +20,7 @@ function domi_chiliTypes_cpt() {
                 'not_found_in_trash' => _x('Keine Chilis im Papierkorb gefunden.', 'Not found in trash', 'wptheme.smartfarming'),
             ),
             'description'         => _x('Chili Informationen', 'Description', 'wptheme.fgchilis'),
-            'supports'            => ['title', 'thumbnail'],
+            'supports'            => ['title', 'editor', 'thumbnail'],
             'hierarchical'        => true,
             'public'              => true,
             'show_ui'             => true,
